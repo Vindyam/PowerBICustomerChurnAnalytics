@@ -1,7 +1,7 @@
 # Customer Churn Analytics Dashboard (Power BI)
 
 ## Project Overview
-This is a **GitHub-ready Power BI portfolio project** built from a customer churn dataset. It is designed to showcase:
+This is a Power BI portfolio project built from a customer churn dataset. It is designed to showcase:
 - business intelligence dashboard design
 - KPI development with DAX
 - customer retention analysis
@@ -70,6 +70,3 @@ customer-churn-powerbi-pro-project/
 └── screenshots/
 ```
 
-## Example CV Wording
-**Customer Churn Analytics Dashboard | Power BI, DAX**  
-Built a multi-page Power BI dashboard to analyze customer churn, segment high-risk customers, and track retention KPIs using DAX measures and interactive visualizations.
