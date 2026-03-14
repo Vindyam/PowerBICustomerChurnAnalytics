@@ -1,0 +1,49 @@
+-- Rename your Power BI table to: Customer_Churn
+
+Total Customers =
+COUNTROWS(Customer_Churn)
+
+Churned Customers =
+CALCULATE(
+    COUNTROWS(Customer_Churn),
+    Customer_Churn[Churn] = "Yes"
+)
+
+Retained Customers =
+[Total Customers] - [Churned Customers]
+
+Churn Rate =
+DIVIDE([Churned Customers], [Total Customers])
+
+Average Monthly Charges =
+AVERAGE(Customer_Churn[MonthlyCharges])
+
+Average Tenure =
+AVERAGE(Customer_Churn[Tenure])
+
+Revenue at Risk =
+CALCULATE(
+    SUM(Customer_Churn[MonthlyCharges]),
+    Customer_Churn[Churn] = "Yes"
+)
+
+Churn Rate by Customer =
+AVERAGEX(
+    Customer_Churn,
+    IF(Customer_Churn[Churn] = "Yes", 1, 0)
+)
+
+Customers per Tenure Band =
+COUNTROWS(Customer_Churn)
+
+Average Charges - Churned =
+CALCULATE(
+    AVERAGE(Customer_Churn[MonthlyCharges]),
+    Customer_Churn[Churn] = "Yes"
+)
+
+Average Charges - Retained =
+CALCULATE(
+    AVERAGE(Customer_Churn[MonthlyCharges]),
+    Customer_Churn[Churn] = "No"
+)
