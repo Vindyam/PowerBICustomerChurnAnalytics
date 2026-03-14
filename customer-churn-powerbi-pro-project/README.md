@@ -58,9 +58,6 @@ This is a **GitHub-ready Power BI portfolio project** built from a customer chur
 - `theme/churn_dashboard_theme.json`
 - `screenshots/` mock visuals for GitHub preview
 
-## Portfolio Tip
-Upload the finished `.pbix` file to the repo **after** you build it in Power BI Desktop.  
-Suggested filename: `customer_churn_analytics_dashboard.pbix`
 
 ## GitHub Structure
 ```text
